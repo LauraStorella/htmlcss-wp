@@ -1,22 +1,28 @@
-/* INIZIO RESET */
+/* Inizio reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
-/* FINE RESET */
+/* Fine reset */
 
-/* INIZIO MAIN-WRAPPER */
+/* Inizio regole generali */
+body {
+  background-image: url(../img/sfondo.png);
+}
+/* Fine regole generali */
+
+/* Inizio regole main-wrapper */
 #main-wrapper {
   width: 1024px;
   height: 100%;
   padding: 10px;
   margin: auto;
-  background: lightgrey;
 }
-/* FINE MAIN-WRAPPER */
+/* Fine regole main-wrapper */
 
-/* INIZIO HEADER */
+/* Inizio regole header */
 header {
   width: 100%;
   height: 300px;
@@ -36,9 +42,9 @@ header {
   text-transform: uppercase;
   color: white;
 }
-/* FINE HEADER */
+/* Fine regole header */
 
-/* INIZIO MENU */
+/* Inizio regole menu */
 .menu {
   width: 100%;
   height: 40px;
@@ -56,9 +62,13 @@ header {
   list-style: none;
   margin: 0 15px;
 }
-/* FINE MENU */
 
-/* INIZIO MAIN */
+.menu li:hover {
+  background: rgba(0,0,0,0.3);
+}
+/* Fine regole menu */
+
+/* Inzio regole main */
 main {
   margin: 10px 0;
 }
@@ -67,10 +77,15 @@ main::after {
   display: table;
   clear: both;
 }
+
+main .col {
+  border-radius: 3px;
+  background: white;
+}
+
 main .col-left {
   width: 23%;
   height: 500px;
-  background: red;
   float: left;
 }
 
@@ -78,35 +93,46 @@ main .col-center {
   width: 50%;
   height: 500px;
   margin: 0 2%;
-  background: red;
   float: left;
 }
 
 main .col-right {
   width: 23%;
   height: 500px;
-  background: red;
+  background: none;
   float: left;
+}
+
+.articolo img {
+  width: 100%;
 }
 
 main .box {
   height: 25%;
-  background: yellow;
+  border-radius: 3px;
+  background: white;
 }
 
 main .box.box-middle {
   margin: 5% 0;
 }
-/* FINE MAIN */
+/* Fine regole main */
 
-/* INIZIO FOOTER */
+/* Inizio regole footer */
 footer {
   height: 100px;
   background: darkgray;
+  padding: 2px;
 }
 
 footer > p {
   font-style: italic;
   text-align: center;
 }
-/* FINE FOOTER */
+
+footer .icone {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 30px;
+}
+/* Fine regole footer */
