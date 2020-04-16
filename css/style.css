@@ -11,6 +11,11 @@
 body {
   background-image: url(../img/sfondo.png);
 }
+
+h2, h3, p {
+  padding: 10px 10px;
+  text-align: justify;
+}
 /* Fine regole generali */
 
 /* Inizio regole main-wrapper */
@@ -68,7 +73,8 @@ header {
 }
 /* Fine regole menu */
 
-/* Inzio regole main */
+/* INIZIO REGOLE MAIN */
+/* Regole generali main */
 main {
   margin: 10px 0;
 }
@@ -78,17 +84,30 @@ main::after {
   clear: both;
 }
 
+/* Regole geneali colonne */
 main .col {
   border-radius: 3px;
   background: white;
 }
 
+/* Regole colonna-sinistra */
 main .col-left {
   width: 23%;
   height: 500px;
   float: left;
 }
 
+main .col-left ul {
+  list-style: none;
+  padding: 10px 10px 10px 20px;
+}
+
+main .col-left li {
+  margin: 10px;
+  color: lightgreen;
+}
+
+/* Regole colonna-centro */
 main .col-center {
   width: 50%;
   height: 500px;
@@ -96,6 +115,7 @@ main .col-center {
   float: left;
 }
 
+/* Regole colonna-destra */
 main .col-right {
   width: 23%;
   height: 500px;
@@ -116,7 +136,7 @@ main .box {
 main .box.box-middle {
   margin: 5% 0;
 }
-/* Fine regole main */
+/* FINE REGOLE MAIN */
 
 /* Inizio regole footer */
 footer {
